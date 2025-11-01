@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
-st.title("Filtrace Graweb")
+st.title("Provize pro IMPnet")
 
-file1 = st.file_uploader("FAV", type="xlsx")
-file2 = st.file_uploader("aktivní klienti", type="xlsx")
-file3 = st.file_uploader("moji_klienti", type="xlsx")
+file1 = st.file_uploader("Faktury Vydané GRAWEB", type="xlsx")
+file2 = st.file_uploader("Klienti IMP netu", type="xlsx")
+file3 = st.file_uploader("Původní klienti GRAWEBu", type="xlsx")
 
 if file1 and file2 and file3:
     # Read the Excel files
